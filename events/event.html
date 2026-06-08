@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+      }
+      .row-span-3{
+        height: 70px;
+        width: 70vh;
+        margin-left: 20px;
+        background-color: var(--color-red-200); 
+        border-radius: var(--radius-xs);
+        margin-top: 20px;
+         border: 1px solid black;
+      }
+      .col-span-2{
+        margin-top: 15px;
+       
+        height: 20px;
+        width: 120vh;
+        border: 1px solid black;
+      }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid grid-flow-col grid-rows-3 gap-4">
+        <div class="row-span-3"  id="span_1" ></div>
+        <div class="col-span-2  bg-pink-500 "></div>
+        <div class="col-span-2  row-span-2  bg-pink-500 "></div>
+    </div>
+</body>
+  <script>
+    // document.getElementById('span_1').onclick=function(){
+    //     alert('span clicked')
+    // }
+       document.getElementById('span_1').addEventListener('click',function(e){
+        alert('span clicked')
+       },false)
+    //type,timestamp,defaultPrevented
+        // target,toelement ,srcElement,currentTarget
+        // clientX,clientY,screenX,screenY
+        // altKey,shiftKey,ctrlKey
+  </script>
+</html>

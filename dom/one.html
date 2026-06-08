@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom learing</title>
+</head>
+
+
+<style>
+    body {
+        background-color: #212121;
+    }
+
+    body {
+        color: #ffffff;
+    }
+</style>
+
+<body>
+    <div class="parents">
+        <h1 id="title">DOM Learning</h1>
+        <p>DOM stands for Document Object Model. It is a programming interface for web documents. It represents the page
+            so
+            that programs can change the document structure, style, and content. The DOM represents the document as a
+            tree
+            of nodes, where each node represents an element, attribute, or piece of text in the document.</p>
+    </div>
+</body>
+<script>
+    // Accessing the DOM
+    const titleElement = document.querySelector('.parents')
+     console.log(titleElement)
+     console.log(titleElement.innerHTML)
+     console.log(titleElement.children)
+
+     titleElement.children[1].style.color = "red"
+
+</script>
+</html>
